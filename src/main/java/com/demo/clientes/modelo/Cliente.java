@@ -18,7 +18,7 @@ public class Cliente
    private String nombre;
    private String apellido;
    private int    edad;
-   @DateTimeFormat( pattern = "MM-dd-yyyy" )
+   @DateTimeFormat( pattern = "yyyy-mm-dd" )
    private Date   fechaNacimiento;
    private Date   probableMuerte;
 

@@ -23,7 +23,7 @@
 			<input type="text" name="apellido"><br>
 			<label>Edad: </label>
 			<input type="text" name="edad"><br>
-			<label>Nacimiento (MM-dd-yyyy): </label>
+			<label>Nacimiento (yyyy-mm-dd): </label>
 			<input type="datetime" name="fechaNacimiento">
 			<br><br>
 			<input type="submit" value="Crear Cliente" class="button">

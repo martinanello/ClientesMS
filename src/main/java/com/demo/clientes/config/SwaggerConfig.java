@@ -30,14 +30,14 @@ public class SwaggerConfig
    private static ApiInfo apiInfo()
    {
       return new ApiInfo( "ClientesMS API",
-                          "API de Clientes.",
+                          "API de Clientes en Spring Boot con interfaz JSP y base de datos en memoria.\nExisten 4 registros de clientes precargados (Id 1 al 4)",
                           "V1.0",
-                          "Terms of Service",
+                          "Terminos de Servicio",
                           new Contact( "Martin Anello",
-                                       " ",
+                                       "",
                                        "martinanello@gmail.com" ),
-                          "License of API",
-                          "API license URL",
+                          "Licencia de API",
+                          "URL de licencia",
                           Collections.emptyList() );
    }
 }
