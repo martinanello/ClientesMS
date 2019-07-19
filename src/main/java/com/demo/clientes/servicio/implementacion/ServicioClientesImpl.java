@@ -20,7 +20,7 @@ public class ServicioClientesImpl implements ServicioClientes
 
    @Autowired
    RepositorioCliente repoCliente;
-   private final int expectativaVida = 80;
+   private final int  expectativaVida = 80;
 
    @Override
    public void crearCliente( Cliente cliente )
@@ -70,12 +70,13 @@ public class ServicioClientesImpl implements ServicioClientes
       while( it.hasNext() )
       {
          Cliente cl = it.next();
-         
+
          Calendar calendar = Calendar.getInstance();
-         calendar.setTime(cl.getFechaNacimiento());
-         calendar.add(Calendar.YEAR, expectativaVida);
+         calendar.setTime( cl.getFechaNacimiento() );
+         calendar.add( Calendar.YEAR,
+                       expectativaVida );
          cl.setProbableMuerte( calendar.getTime() );
-         
+
          list.add( cl );
       }
       ListaClientes listaClientes = new ListaClientes();

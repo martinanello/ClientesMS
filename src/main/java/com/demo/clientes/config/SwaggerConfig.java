@@ -24,7 +24,7 @@ public class SwaggerConfig
                                                       .apis( RequestHandlerSelectors.basePackage( "com.demo.clientes.controlador" ) )
                                                       .paths( PathSelectors.any() )
                                                       .build()
-                                                      .apiInfo( apiInfo());
+                                                      .apiInfo( apiInfo() );
    }
 
    private static ApiInfo apiInfo()

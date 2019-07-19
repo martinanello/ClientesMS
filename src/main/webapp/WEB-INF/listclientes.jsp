@@ -6,6 +6,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Lista de Clientes</title>
+<link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
 
@@ -36,7 +37,7 @@
 	<form action="/">
 		<div align="center">
 			<br><br><br>
-			<input type="submit" value="Volver">
+			<input type="submit" value="Volver" class="button">
 		</div>
 	</form>
 	

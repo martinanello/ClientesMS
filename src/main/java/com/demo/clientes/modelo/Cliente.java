@@ -13,7 +13,7 @@ public class Cliente
 {
 
    @Id
-//      @GeneratedValue
+   //      @GeneratedValue
    private long   id;
    private String nombre;
    private String apellido;
@@ -32,7 +32,7 @@ public class Cliente
                    String apellido,
                    int edad,
                    Date fechaNacimiento,
-                   Date probableMuerte)
+                   Date probableMuerte )
    {
       this.id = id;
       this.nombre = nombre;

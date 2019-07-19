@@ -1,0 +1,7 @@
+---
+applications:
+- name: ClientesMS
+  host: ClientesMS
+  memory: 1G
+  path: build/libs/ClientesMS-0.0.1-SNAPSHOT.jar
+  buildpack: 'https://github.com/cloudfoundry/java-buildpack#v4.20'

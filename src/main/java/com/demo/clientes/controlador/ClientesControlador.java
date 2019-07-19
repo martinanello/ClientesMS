@@ -21,7 +21,7 @@ public class ClientesControlador
    @RequestMapping( "/" )
    public String home()
    {
-      return "home.jsp";
+      return "home";
    }
 
    @PostMapping( "/creacliente" )
@@ -29,7 +29,7 @@ public class ClientesControlador
    public ModelAndView creacliente( Cliente cliente )
    {
       servicio.crearCliente( cliente );
-      ModelAndView mv = new ModelAndView( "clientecreado.jsp" );
+      ModelAndView mv = new ModelAndView( "clientecreado" );
       mv.addObject( "cliente",
                     cliente );
       return mv;
@@ -39,7 +39,7 @@ public class ClientesControlador
    @ResponseBody
    public ModelAndView kpideclientes()
    {
-      ModelAndView mv = new ModelAndView( "kpideclientes.jsp" );
+      ModelAndView mv = new ModelAndView( "kpideclientes" );
       mv.addObject( "kpi",
                     servicio.getKpiClientes() );
       return mv;
@@ -49,9 +49,10 @@ public class ClientesControlador
    @ResponseBody
    public ModelAndView listclientes()
    {
-      ModelAndView mv = new ModelAndView( "listclientes.jsp" );
+      ModelAndView mv = new ModelAndView( "listclientes" );
       mv.addObject( "listaClientes",
-                    servicio.getListaClientes().getListaClientes() );
+                    servicio.getListaClientes()
+                            .getListaClientes() );
       return mv;
    }
 }

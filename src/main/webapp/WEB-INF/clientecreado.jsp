@@ -4,17 +4,18 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Kpi de Clientes</title>
+<title>Cliente Creado</title>
+<link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
 
 	<div align="center">
-		<h2>${kpi}</h2>
+		<h2>${cliente}</h2>
 	</div>
 	
 	<form action="/">
 		<div align="center">
-			<input type="submit" value="Volver">
+			<input type="submit" value="Volver" class="button">
 		</div>
 	</form>
 	
